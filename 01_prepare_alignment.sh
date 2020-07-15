@@ -4,7 +4,7 @@ module load  mafft/7.294
 module load trimal/1.2
 
 # 1st
-mafft --auto --reorder --thread 1 01_ITS.fasta > 02_mafft.fasta
+mafft --auto --reorder --thread 1 00_ITS.fasta > 02_mafft.fasta
 
 # 2nd
 trimal -in 02_mafft.fasta -out 02_mafft.trimed.fasta -gappyout -fasta
