@@ -8,6 +8,7 @@ mafft --auto --reorder --thread 1 00_ITS.fasta > 02_mafft.fasta
 
 # 2nd
 trimal -in 02_mafft.fasta -out 02_mafft.trimed.fasta -gappyout -fasta
+
 # rename, remove all characters after "blank"
 sed 's/ .*$//g' 02_mafft.trimed.fasta > 02_ITS.fasta
 
